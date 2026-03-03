@@ -10,5 +10,7 @@ namespace Feane.Context
         }
 
         public DbSet<Slider> Sliders { get; set; }
+        public DbSet<DiscountedProduct> DiscountedProducts { get; set; }
+        public DbSet<Dish> Dishes { get; set; }
     }
 }
