@@ -14,7 +14,7 @@ namespace Feane
 
             builder.Services.AddDbContext<AppDbContext>(options =>
             {
-                options.UseSqlServer(builder.Configuration.GetConnectionString("Default"));
+                options.UseNpgsql(builder.Configuration.GetConnectionString("Default"));
             });
 
             var app = builder.Build();
