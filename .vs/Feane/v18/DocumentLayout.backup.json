@@ -1,12 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\ASUS\\Desktop\\FeaneProyekt\\Feane\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{0B871C2D-290B-4ACB-AC36-D6E1B146EE26}|Feane\\Feane.csproj|c:\\users\\asus\\desktop\\feaneproyekt\\feane\\feane\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0B871C2D-290B-4ACB-AC36-D6E1B146EE26}|Feane\\Feane.csproj|solutionrelative:feane\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
@@ -14,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -43,19 +38,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\FeaneProyekt\\Feane\\Feane\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Feane\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\ASUS\\Desktop\\FeaneProyekt\\Feane\\Feane\\Views\\Shared\\_Layout.cshtml*",
-              "RelativeToolTip": "Feane\\Views\\Shared\\_Layout.cshtml*",
-              "ViewState": "AgIAADkAAAAAAAAAAAAAAEYAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-07T17:26:09.313Z",
-              "EditorCaption": ""
             }
           ]
         },

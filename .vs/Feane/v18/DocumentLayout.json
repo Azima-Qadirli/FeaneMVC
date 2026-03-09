@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\ASUS\\Desktop\\FeaneProyekt\\Feane\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0B871C2D-290B-4ACB-AC36-D6E1B146EE26}|Feane\\Feane.csproj|c:\\users\\asus\\desktop\\feaneproyekt\\feane\\feane\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0B871C2D-290B-4ACB-AC36-D6E1B146EE26}|Feane\\Feane.csproj|solutionrelative:feane\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0B871C2D-290B-4ACB-AC36-D6E1B146EE26}|Feane\\Feane.csproj|c:\\users\\asus\\desktop\\feaneproyekt\\feane\\feane\\viewmodels\\discountedproduct\\discountedproductupdatevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B871C2D-290B-4ACB-AC36-D6E1B146EE26}|Feane\\Feane.csproj|solutionrelative:feane\\viewmodels\\discountedproduct\\discountedproductupdatevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B871C2D-290B-4ACB-AC36-D6E1B146EE26}|Feane\\Feane.csproj|c:\\users\\asus\\desktop\\feaneproyekt\\feane\\feane\\models\\discountedproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B871C2D-290B-4ACB-AC36-D6E1B146EE26}|Feane\\Feane.csproj|solutionrelative:feane\\models\\discountedproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B871C2D-290B-4ACB-AC36-D6E1B146EE26}|Feane\\Feane.csproj|c:\\users\\asus\\desktop\\feaneproyekt\\feane\\feane\\viewmodels\\discountedproduct\\discountedproductcreatevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B871C2D-290B-4ACB-AC36-D6E1B146EE26}|Feane\\Feane.csproj|solutionrelative:feane\\viewmodels\\discountedproduct\\discountedproductcreatevm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0B871C2D-290B-4ACB-AC36-D6E1B146EE26}|Feane\\Feane.csproj|c:\\users\\asus\\desktop\\feaneproyekt\\feane\\feane\\viewmodels\\discountedproduct\\discountedproductgetvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0B871C2D-290B-4ACB-AC36-D6E1B146EE26}|Feane\\Feane.csproj|solutionrelative:feane\\viewmodels\\discountedproduct\\discountedproductgetvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,15 +58,54 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DiscountedProduct.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\FeaneProyekt\\Feane\\Feane\\Models\\DiscountedProduct.cs",
+              "RelativeDocumentMoniker": "Feane\\Models\\DiscountedProduct.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\FeaneProyekt\\Feane\\Feane\\Models\\DiscountedProduct.cs",
+              "RelativeToolTip": "Feane\\Models\\DiscountedProduct.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T09:25:16.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\FeaneProyekt\\Feane\\Feane\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Feane\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\ASUS\\Desktop\\FeaneProyekt\\Feane\\Feane\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Feane\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAADkAAAAAAAAAAAAAAEYAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-07T17:26:09.313Z",
+              "Title": "DiscountedProductUpdateVM.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\FeaneProyekt\\Feane\\Feane\\ViewModels\\DiscountedProduct\\DiscountedProductUpdateVM.cs",
+              "RelativeDocumentMoniker": "Feane\\ViewModels\\DiscountedProduct\\DiscountedProductUpdateVM.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\FeaneProyekt\\Feane\\Feane\\ViewModels\\DiscountedProduct\\DiscountedProductUpdateVM.cs",
+              "RelativeToolTip": "Feane\\ViewModels\\DiscountedProduct\\DiscountedProductUpdateVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T09:19:40.073Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DiscountedProductGetVM.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\FeaneProyekt\\Feane\\Feane\\ViewModels\\DiscountedProduct\\DiscountedProductGetVM.cs",
+              "RelativeDocumentMoniker": "Feane\\ViewModels\\DiscountedProduct\\DiscountedProductGetVM.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\FeaneProyekt\\Feane\\Feane\\ViewModels\\DiscountedProduct\\DiscountedProductGetVM.cs",
+              "RelativeToolTip": "Feane\\ViewModels\\DiscountedProduct\\DiscountedProductGetVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T09:16:20.605Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DiscountedProductCreateVM.cs",
+              "DocumentMoniker": "C:\\Users\\ASUS\\Desktop\\FeaneProyekt\\Feane\\Feane\\ViewModels\\DiscountedProduct\\DiscountedProductCreateVM.cs",
+              "RelativeDocumentMoniker": "Feane\\ViewModels\\DiscountedProduct\\DiscountedProductCreateVM.cs",
+              "ToolTip": "C:\\Users\\ASUS\\Desktop\\FeaneProyekt\\Feane\\Feane\\ViewModels\\DiscountedProduct\\DiscountedProductCreateVM.cs",
+              "RelativeToolTip": "Feane\\ViewModels\\DiscountedProduct\\DiscountedProductCreateVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-09T09:13:47.831Z",
               "EditorCaption": ""
             }
           ]

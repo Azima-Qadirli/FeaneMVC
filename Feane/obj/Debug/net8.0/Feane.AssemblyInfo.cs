@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Feane")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cf54ffc318be77daa69b94a43b75774f032516bc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9456206b24df6b3fcbb0b91d1a5b8a14400a18cb")]
 [assembly: System.Reflection.AssemblyProductAttribute("Feane")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Feane")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
