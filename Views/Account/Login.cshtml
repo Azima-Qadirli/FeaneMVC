@@ -1,0 +1,26 @@
+﻿@using Feane.ViewModels.Account
+@model LoginVM
+
+<div class="container d-flex justify-content-center align-items-center" style="min-height:100vh;">
+    <div class="card p-4 shadow-lg" style="width:500px; border-radius:20px; background-color:white;">
+        <h2 class="text-center mb-4">Login</h2>
+
+        <form method="post" asp-action="Login">
+            <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+            <div class="form-group mb-3">
+                <label asp-for="Email"></label>
+                <input asp-for="Email" class="form-control" placeholder="Enter Email" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="Password"></label>
+                <input asp-for="Password" class="form-control" type="password" placeholder="Enter Password" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+
+            <button type="submit" class="btn btn-warning w-100">Login</button>
+        </form>
+    </div>
+</div>

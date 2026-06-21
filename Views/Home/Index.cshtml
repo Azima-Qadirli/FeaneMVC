@@ -1,0 +1,243 @@
+﻿@using Feane.ViewModels.Home
+@model HomeVM
+<!-- slider section -->
+<section class="slider_section ">
+    <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                @foreach (var item in Model.Slider)
+                {
+                    <div class="container ">
+                        <div class="row">
+                            <div class="col-md-7 col-lg-6 ">
+                                <div class="detail-box">
+                                    <h1>
+                                        @item.Name
+                                    </h1>
+                                    <p>
+                                        @item.Description
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+
+</section>
+<!-- end slider section -->
+</div>
+
+<!-- offer section -->
+
+<section class="offer_section layout_padding-bottom">
+    <div class="offer_container">
+        <div class="container ">
+            <div class="row">
+                @foreach (var item in Model.DiscountedProducts)
+                {
+                    <div class="col-md-6  ">
+                        <div class="box ">
+                            <div class="img-box">
+                                <img src="~/images/@item.ImageName" alt="">
+                            </div>
+                            <div class="detail-box">
+                                <h5>
+                                    @item.Name
+                                    <h6>
+                                        <span>@item.Percentage%</span> Off
+                                    </h6>
+                            </div>
+                        </div>
+                    </div>
+
+                }
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- end offer section -->
+<!-- food section -->
+
+<section class="food_section layout_padding-bottom">
+    <div class="container">
+        <div class="heading_container heading_center">
+            <h2>
+                Our Menu
+            </h2>
+        </div>
+
+        <div class="filters-content">
+            <div class="row grid">
+                @foreach (var item in Model.Dishes)
+                {
+
+                    <div class="col-sm-6 col-lg-4 all pizza">
+                        <div class="box">
+                            <div>
+                                <div class="img-box">
+                                    <img src="~/images/@item.ImageName" alt="">
+                                </div>
+                                <div class="detail-box">
+                                    <h5>
+                                        @item.Name
+                                    </h5>
+                                    <p>
+                                        @item.Description
+                                    </p>
+                                    <div class="options">
+                                        <h6>
+                                            $@item.DishPrice
+                                        </h6>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+        <div class="btn-box">
+            <a href="">
+                View More
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- end food section -->
+<!-- about section -->
+
+<section class="about_section layout_padding">
+    <div class="container  ">
+        @foreach (var item in Model.Appeareances)
+        {
+            <div class="row">
+                <div class="col-md-6 ">
+                    <div class="img-box">
+                        <img src="images/@item.ImageName" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="detail-box">
+                        <div class="heading_container">
+                            <h2>
+                                @item.Title
+                            </h2>
+                        </div>
+                        <p>
+                            @item.Description
+                        </p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</section>
+
+<!-- end about section -->
+<!-- book section -->
+<section id="book-table" class="book_section layout_padding">
+    <div class="container">
+        <div class="heading_container">
+            <h2>
+                Book A Table
+            </h2>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form_container">
+                    <form method="post" asp-controller="Book" asp-action="Create">
+                        <div>
+                            <input type="text" name="Name" class="form-control" placeholder="Your Name" required />
+                        </div>
+                        <div>
+                            <input type="text" name="PhoneNumber" class="form-control" placeholder="Phone Number" required />
+                        </div>
+                        <div>
+                            <input type="email" name="Email" class="form-control" placeholder="Your Email" required />
+                        </div>
+                        <div>
+                            <select name="PersonNumber" class="form-control nice-select wide" required>
+                                <option value="" disabled selected>
+                                    How many persons?
+                                </option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <div>
+                            <input type="date" name="Date" class="form-control" required>
+                        </div>
+                        <div class="btn_box">
+                            <button type="submit">
+                                Book Now
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="map_container shadow rounded overflow-hidden">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3039.5692098187174!2d49.85778417652887!3d40.37407545823352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307dc375775d57%3A0x39d9cc337e72979b!2sCrescent%20Mall!5e0!3m2!1sen!2saz!4v1733770874630!5m2!1sen!2saz"
+                            width="100%"
+                            height="430"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- end book section -->
+<!-- client section -->
+
+<section class="client_section layout_padding-bottom">
+    <div class="container">
+        <div class="heading_container heading_center psudo_white_primary mb_45">
+            <h2>
+                What Says Our Customers
+            </h2>
+            <div class="d-flex justify-content-center mt-3">
+                <a asp-controller="Customer" asp-action="Create" class="btn text-white px-4 py-2 font-weight-bold shadow-sm"
+                   style="background-color: #ffbe33; border-radius: 20px 20px 20px 20px; transition: all 0.3s ease; font-size: 15px; letter-spacing: 0.5px;">
+                    <i class="fa fa-pencil-square-o mr-2" aria-hidden="true"></i> Give your opinion
+                </a>
+            </div>
+        </div>
+        <div class="carousel-wrap row ">
+            <div class="owl-carousel client_owl-carousel">
+                @foreach (var item in Model.Customers)
+                {
+                    <div class="item">
+                        <div class="box">
+                            <div class="detail-box">
+                                <p>
+                                    @item.Comment
+                                </p>
+                                <h6>
+                                    @item.Name
+                                </h6>
+                            </div>
+                            <div class="img-box">
+                                <img src="~/images/@item.ImageName" alt="" class="box-img">
+                            </div>
+                        </div>
+                    </div>
+                }
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- end client section -->

@@ -1,0 +1,46 @@
+﻿@using Feane.ViewModels.BookTable
+@model BookTableCreateVM
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-6">
+            <h3>Book A Table</h3>
+            <form method="post" asp-controller="Book" asp-action="Create">
+
+                <div class="form-group mb-3">
+                    <input asp-for="Name" class="form-control" placeholder="Your Name" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <input asp-for="PhoneNumber" class="form-control" placeholder="Phone Number" />
+                    <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <input asp-for="Email" class="form-control" placeholder="Your Email" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-3">
+                    <select asp-for="PersonNumber" class="form-control">
+                        <option value="">How many persons?</option>
+                        <option value="1">1 Person</option>
+                        <option value="2">2 Persons</option>
+                        <option value="3">3 Persons</option>
+                        <option value="4">4 Persons</option>
+                        <option value="5">5+ Persons</option>
+                    </select>
+                    <span asp-validation-for="PersonNumber" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-4">
+                    <input asp-for="Date" type="date" class="form-control" />
+                    <span asp-validation-for="Date" class="text-danger"></span>
+                </div>
+
+                <button type="submit" class="btn btn-warning style-button">BOOK NOW</button>
+            </form>
+        </div>
+    </div>
+</div>

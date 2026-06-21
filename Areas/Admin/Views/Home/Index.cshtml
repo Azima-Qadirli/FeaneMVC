@@ -1,0 +1,234 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="utf-8">
+    <title>Feane - Admin Dashboard</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:ital,wght@0,600;1,400&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+            :root {
+                --primary: #EB1616;
+                --secondary: #191C24;
+                --light: #6C7293;
+                --dark: #090a0c;
+            }
+
+            body {
+                background-color: var(--dark);
+                color: var(--light);
+                font-family: 'Roboto', sans-serif;
+                margin: 0;
+            }
+
+            .bg-secondary {
+                background-color: var(--secondary) !important;
+            }
+
+            .text-primary {
+                color: var(--primary) !important;
+            }
+
+            .sidebar {
+                position: fixed;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                width: 250px;
+                background: var(--secondary);
+                z-index: 999;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+
+            .content {
+                margin-left: 250px;
+                min-height: 100vh;
+                background: var(--dark);
+                display: flex;
+                flex-direction: column;
+            }
+
+            .sidebar .nav-link {
+                padding: 15px 20px;
+                color: #FFFFFF;
+                font-weight: 500;
+                border-left: 3px solid transparent;
+                transition: 0.3s;
+            }
+
+                .sidebar .nav-link:hover, .sidebar .nav-link.active {
+                    color: var(--primary);
+                    background: rgba(0, 0, 0, 0.3);
+                    border-left: 3px solid var(--primary);
+                }
+
+            .premium-logout-btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 10px;
+                margin: 20px;
+                padding: 12px;
+                color: var(--primary);
+                border: 1px solid rgba(235, 22, 22, 0.3);
+                border-radius: 10px;
+                font-weight: 600;
+                text-decoration: none;
+            }
+
+                .premium-logout-btn:hover {
+                    background: var(--primary);
+                    color: #fff;
+                }
+
+            /* 🔥 DİNAMİK VƏ BÖYÜK QUTULAR ÜÇÜN HƏLL 🔥 */
+            .welcome-wrapper {
+                flex: 1;
+                padding: 40px;
+                display: flex;
+                align-items: center;
+                min-height: calc(100vh - 120px);
+            }
+
+            .brand-display, .luxury-vibe-panel {
+                background: linear-gradient(135deg, #191C24 0%, #0f1115 100%);
+                padding: 80px 60px !important;
+                border-radius: 30px;
+                border: 1px solid rgba(235, 22, 22, 0.1);
+                min-height: 450px; /* Qutuları uzadır */
+                display: flex;
+                flex-direction: column;
+                justify-content: center; /* Məzmunu mərkəzə yığır */
+                box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+            }
+
+            .restaurant-title {
+                font-family: 'Playfair Display', serif;
+                font-size: 2rem;
+                color: #6C7293;
+                letter-spacing: 5px;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+            }
+
+            .admin-main-title {
+                font-family: 'Playfair Display', serif;
+                font-size: 5.5rem;
+                font-weight: 700;
+                color: #ffffff;
+                line-height: 1;
+                margin: 0;
+            }
+
+            .status-badge {
+                align-self: flex-start;
+                background: rgba(235, 22, 22, 0.1);
+                color: var(--primary);
+                padding: 10px 25px;
+                border-radius: 50px;
+                font-weight: 700;
+                letter-spacing: 2px;
+                margin-bottom: 30px;
+            }
+
+            .greeting-text {
+                color: #ffffff;
+                font-family: 'Playfair Display', serif;
+                font-size: 3rem;
+                margin-bottom: 10px;
+            }
+
+            .time-display-large {
+                font-size: 5rem;
+                font-weight: 700;
+                color: #ffffff;
+                margin-bottom: 30px;
+            }
+
+            .chef-quote {
+                color: #888e9b;
+                font-style: italic;
+                font-size: 1.3rem;
+                border-left: 4px solid var(--primary);
+                padding-left: 20px;
+                line-height: 1.7;
+            }
+    </style>
+</head>
+<body>
+    <div class="container-fluid position-relative d-flex p-0">
+        <div class="sidebar">
+            <nav class="navbar navbar-dark">
+                <a href="https://localhost:7199/" class="navbar-brand mx-4 my-3">
+                    <h3 class="text-primary">
+                        <i class="fa fa-utensils me-2"></i>Feane
+                    </h3>
+                </a>
+                <div class="navbar-nav w-100">
+                    <a href="https://localhost:7199/Admin/slider" class="nav-item nav-link active"><i class="fa fa-images me-2"></i>Slider</a>
+                    <a href="https://localhost:7199/Admin/dish" class="nav-item nav-link"><i class="fa fa-utensils me-2"></i>Dish</a>
+                    <a href="https://localhost:7199/Admin/discountedproduct" class="nav-item nav-link"><i class="fa fa-tags me-2"></i>Discount Product</a>
+                    <a href="https://localhost:7199/Admin/booktable" class="nav-item nav-link"><i class="fa fa-calendar-check me-2"></i>BookTable</a>
+                    <a href="https://localhost:7199/Admin/appearance" class="nav-item nav-link"><i class="fa fa-palette me-2"></i>Appearance</a>
+                    <a href="https://localhost:7199/Admin/customers" class="nav-item nav-link"><i class="fa fa-users me-2"></i>Customer</a>
+                </div>
+            </nav>
+            <a asp-controller="Account" asp-action="Logout" class="premium-logout-btn">
+                <i class="fas fa-sign-out-alt"></i> LOGOUT
+            </a>
+        </div>
+
+        <div class="content">
+            <nav class="navbar navbar-expand bg-secondary px-4" style="height: 60px;"></nav>
+
+            <div class="welcome-wrapper">
+                <div class="container-fluid">
+                    <div class="row g-5">
+                        <!-- Sol Qutu -->
+                        <div class="col-lg-7">
+                            <div class="brand-display">
+                                <h3 class="restaurant-title">Feane Restoran</h3>
+                                <h1 class="admin-main-title">Azima Qadirli</h1>
+                            </div>
+                        </div>
+                        <!-- Sağ Qutu -->
+                        <div class="col-lg-5">
+                            <div class="luxury-vibe-panel">
+                                <div class="status-badge"><i class="fas fa-fire me-2"></i> MƏTBƏX AKTİVDİR</div>
+                                <h3 class="greeting-text" id="dynamicGreeting">Axşamınız xeyir!</h3>
+                                <div class="time-display-large" id="clock">00:00</div>
+                                <div class="chef-quote">"Mükəmməl ləzzət, kiçik detallara olan diqqətdə gizlidir. Bu gün də insanların yaddaşında qalacaq o ləzzəti idarə etməyə hazırıq."</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+                    function updateClock() {
+                        const now = new Date();
+                        $('#clock').text(now.getHours().toString().padStart(2, '0') + ":" + now.getMinutes().toString().padStart(2, '0'));
+
+                    let h = now.getHours();
+                        if (h >= 6 && h < 12) $('#dynamicGreeting').text("Sabahınız xeyir!");
+                        else if (h >= 12 && h < 18) $('#dynamicGreeting').text("Günortanız xeyir!");
+                    else $('#dynamicGreeting').text("Axşamınız xeyir!");
+            }
+                setInterval(updateClock, 1000);
+                    updateClock();
+    </script>
+</body>
+</html>

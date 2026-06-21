@@ -1,0 +1,53 @@
+﻿@using Feane.ViewModels.DiscountedProduct
+@model List<DiscountedProductGetVM>
+
+<div class="container">
+    <div class="row">
+        <div class="col-2">
+            <a class="btn btn-success" asp-action="Create">Create</a>
+        </div>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Image</th>
+                    <th scope="col">Percentage</th>
+                    <th scope="col">Settings</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                @foreach (var product in Model)
+                {
+                    <tr>
+                        <th scope="row">@product.Id</th>
+                        <td>@product.Name</td>
+
+                        <td>
+                            <img src="~/images/@product.ImageName"
+                                 width="100" />
+                        </td>
+
+                        <td>@product.Percentage</td>
+
+                        <td>
+                            <a asp-action="Update"
+                               asp-route-id="@product.Id"
+                               class="btn btn-warning">
+                                Update
+                            </a>
+
+                            <a asp-action="Delete"
+                               asp-route-id="@product.Id"
+                               class="btn btn-danger">
+                                Delete
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
